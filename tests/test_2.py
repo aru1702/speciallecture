@@ -1,27 +1,27 @@
 import unittest
 
 
-def setUpModule():
+def set_up_module():
     print("Running setUpModule")
 
 
-def tearDownModule():
+def tear_down_module():
     print("Running tearDownModule")
 
 
 class TestTwo(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
+    def set_up_class(cls):
         print("Running setUpClass")
 
     @classmethod
-    def tearDownClass(cls):
+    def tear_down_class(cls):
         print("Running tearDownClass")
 
-    def setUp(self):
+    def set_up(self):
         print("Running setUp")
 
-    def tearDown(self):
+    def tear_down(self):
         print("Running tearDown")
 
     def test_read1(self):
